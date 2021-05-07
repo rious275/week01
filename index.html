@@ -3,69 +3,48 @@
     <head>
         <meta charset="utf-8">
         <title>자기소개 페이지</title>
-        <style>
-            @font-face {
-                font-family: 'AppleSDB';
-                src:url("AppleSDGothicNeoB.ttf");
-            }
-            @font-face {
-                font-family: 'AppleSDM';
-                src:url("AppleSDGothicNeoM.ttf");
-            }
-            h1 {
-                font-size:60px;
-                text-align: center;
-                font-family: 'AppleSDB';
-                margin-bottom:50px;
-            }
-            h2 {
-                font-size: 16px;
-                font-family: 'AppleSDM';
-                border-bottom: 1px solid #e2e2e2;
-                padding-bottom:6px;
-            }
-            ul {
-                text-align: center;
-                padding: 0;
-            }
-            li {
-                display: inline;
-                padding-left:36px;
-                padding-right:36px;
-                border-left:1px solid #e2e2e2;
-            }
-            li:first-child {
-                border-left:none;
-            }
-            p {
-                text-align: center;
-                font-family: 'AppleSDB';
-                margin-top: 100px;
-            }
-            #sns {
-                color:red;
-            }
-            a {
-                color:black;
-                text-decoration:none;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Hello :)</h1>
-        <h2>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Profile">Profile</a></li>
-                <li><a id="sns" href="https://github.com/rious275" target="_blank">Github</a></li>
-                <li><a id="sns" href="https://velog.io/@rious275" target="_blank">Velog(TIL)</a></li>
-            </ul>
-        </h2>
-        <p>
+        <section id="main">
+            <h1 class="logo"><a class='logo' href="https://rious275.github.io/week01/#Profile">&#x1F680;</a></h1>
+            <h2>
+                <ul class="menu">
+                    <li class="menu_detail"><a href="#Home">Home</a></li>
+                    <li class="menu_detail"><a href="#Profile">Profile</a></li>
+                    <li class="menu_detail"><a href="#Favorite">Favorite</a></li>
+                    <li class="menu_detail"><a id="sns" class="github" href="https://github.com/rious275" target="_blank">Github</a></li>
+                    <li class="menu_detail"><a id="sns" class="velog" href="https://velog.io/@rious275" target="_blank">Velog(TIL)</a></li>
+                </ul>
+            </h2>
+        </section>
+        <section id="About">
+            <div>About me..</div>
+        <p class="icon">
             안녕하세요. 프론트엔드 개발자를 목표로 공부하는 최민재입니다.<br>
-            I'm Minjae Choi. Studying to become a frontend developer.
+            디자이너로 일을 하다가 개발에 관심이 생기게 되었고, 'Wecode'에서<br>
+            프론트엔드 개발자 경험을 쌓으며 새로운 커리어로 전환하는 것이 목표입니다.
             <br><br><br>
             <img src="icon.png" width="300px">
         </p>
+        </section>
+        <section id="Profile">
+            <div>Profile</div>
+            <ul class="pro_list">
+                <li><a><img class="pt_profile" src="pt_profile.jpg"></a></li><br>
+                <li><a>이름: 최민재</a></li> <br>
+                <li><a>생일: 88.08.31</a></li> <br>
+                <li><a>사는곳: 서울</a></li> <br>
+            </ul>
+        </section>
+        <section id="Favorite">
+            <div>Favorite</div>
+            <div class="fav_list">
+                <div class="fav_movie">&#127909; 영화보기</div>
+                <div class="fav_music">&#127925; 음악</div>
+                <div class="fav_cycle">&#128690; 자전거 타기</div>
+            </div>
+        </section>
+
     </body>
 </html>
